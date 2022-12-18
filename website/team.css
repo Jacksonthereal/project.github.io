@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.one{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo{
+    width: 15%;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:#79FF79;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+.vr-img{
+    width: 100%;
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+.system-1{
+    width: ;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+}
+hr{
+    width: 100px;
+    margin: 10px auto;
+    background-color: #F0F0F0; height: 0.5px; border: none;
+}
+.system-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25px,auto));
+    grid-gap: 1.5rem;
+    margin-top: 4rem;
+    text-align: center;
+    
+    
+}
+.s-system{
+    text-align: center;
+    padding: 10px 20px;
+    color: #fff;
+}
+.s-system img{
+    width: 100px;
+    border-radius: 8px;
+}
+.system-col{
+    flex-basis: 31%;
+    background:	#272727;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: content-box;
+    transition: 0.5s;
+    opacity: 0.7;
+}
+.system-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    opacity: 1;
+    transform: scale(1.1);
+}
+p{
+    font-size: 13px;
+    text-align:left;
+}
+ul li ul.dropdown li{
+    display: block;
+    line-height: 25px;
+}
+ul li ul.dropdown{
+    position: absolute;
+    z-index: 999;
+    display: none;
+    
+}
+ul li:hover ul.dropdown{
+    display: block;
+    font-size: 30px;
+}
+.dropdown::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:#fff;
+    display: block;
+    transition: 0.5s;
+    margin: 0%;
+}
+.member3{
+    font-size: 12px;
+}
